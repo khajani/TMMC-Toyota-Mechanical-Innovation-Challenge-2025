@@ -106,8 +106,8 @@ void setup() {
 
   Serial.begin(115200);  // Serial Monitor baud rate
   prizm.PrizmBegin();    // Intializes the PRIZM controller and waits here for press of green start button
-  prizm.setServoSpeed(2,25);   // Set the speeds the servos will move at
-  prizm.setServoSpeed(1,25);
+  prizm.setServoSpeed(1,25);    // Set the speeds the servos will move at
+  prizm.setServoSpeed(2,45);
   ps4.setDeadZone(LEFT, 10);   // set the Left Joystick dead zone range to +/- 10
   ps4.setDeadZone(RIGHT, 10);  // set the Right Joystick dead zone range to +/- 10
   /* ======================== What is Dead Zone ? =============================
@@ -135,6 +135,8 @@ void setup() {
 void loop() {
 
   ps4.getPS4();  // Get (read) all PS4 button and joystick data values
+
+// Servo controls: 
   
   // If the blue cross button is pressed, move the servo to it's maximum rotation
   if(ps4.Button(CROSS)){
@@ -145,6 +147,7 @@ void loop() {
     prizm.setServoPosition(1,0);      // Move servo 1 to 0 degrees
   }
 
+// Motor Controls 
 
   // If the left trigger is pressed, rotate motor 1 forward
   if(ps4.Button(L2)){
@@ -160,5 +163,5 @@ void loop() {
   }
   
   // Control motor number 2 using the left joystick, press up to go forward and down to go back
-  prizm.setMotorPower(2, ps4.Motor(LY));
+ // prizm.setMotorPower(2, ps4.Motor(LY));
 }
