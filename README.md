@@ -11,3 +11,5 @@ We are tasked with developing a mechanical system that can:
 - 🔄 Efficiently switch between "door-moving" and "box-moving" modes.
 - 🚗 Navigate forward, backward, and around corners.
 - 💸 Optimize for speed, cost, safety, and ease of use.
+
+## 🧱 System Requirements
