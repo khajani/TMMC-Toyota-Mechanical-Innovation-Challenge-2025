@@ -149,11 +149,11 @@ void loop() {
 
 // If the green triangle button is pressed, move the servo to it's maximum rotation
   if(ps4.Button(TRIANGLE)){
-    prizm.setServoPosition(1,180);    // Move servo 1 to 180 degrees
+    prizm.setServoPosition(2,180);    // Move servo 1 to 180 degrees
   
   // If the pink square is pressed, then move the servo back to it's start position
   }else if(ps4.Button(SQUARE)){
-    prizm.setServoPosition(1,0);      // Move servo 1 to 0 degrees
+    prizm.setServoPosition(2,0);      // Move servo 1 to 0 degrees
   }
   
 // Motor Controls 
