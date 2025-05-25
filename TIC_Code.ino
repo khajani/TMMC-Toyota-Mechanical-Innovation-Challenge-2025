@@ -98,79 +98,93 @@
 #include <PRIZM.h>   // TETRIX PRIZM Library
 #include <TELEOP.h>  // TETRIX TeleOp module Library
 
-PRIZM prizm;  // Create an instance within the PRIZM Library class named prizm
-PS4 ps4;      // Create an instance within the PS4 Library class named ps4
+PRIZM prizm;
 
-// Remember to press the green button to start running the code on your vehicle
+bool box = false;
+bool door = false;
+
+const int joystickYPin = 1; // A1
+const int personSensorPin = 1; // D1
+const int squareButtonPin = 2; // D2
+const int circleButtonPin = 3; // D3
+
+const int forwardThreshold = 600;
+const int backwardThreshold = 400;
+
 void setup() {
+  prizm.PrizmBegin();
 
-  Serial.begin(115200);  // Serial Monitor baud rate
-  prizm.PrizmBegin();    // Intializes the PRIZM controller and waits here for press of green start button
-  prizm.setServoSpeed(1,25);    // Set the speeds the servos will move at
-  prizm.setServoSpeed(2,45);
-  ps4.setDeadZone(LEFT, 10);   // set the Left Joystick dead zone range to +/- 10
-  ps4.setDeadZone(RIGHT, 10);  // set the Right Joystick dead zone range to +/- 10
-  /* ======================== What is Dead Zone ? =============================
- Sometimes when you let go of the left and right joysticks on a gaming contoller, they don't always come back to "exact" center. Dead zone is a range
- you can set about the center of the joystick XY axis that is considered to be neutral. As long as the joystick is within the dead zone range, it
- is considered to be at center. This parameter is used by the ps4.Motor() and ps4.Servo() functions, so that when the joystick is within the dead zone, the
- value returned by this function is always a zero (motor stop) for DC motors and 90 (center position) for servos.
-*/
-  Serial.println("initialized");  
+  prizm.setServoPosition(1, 0); // Initialize servo down
 
-  // Wait for ps4 controller to be connected
-  ps4.getPS4();  // Get (read) all PS4 button and joystick data values
-  
-  // Wait for ps4 controller to be connected
-  while(!ps4.Connected){
-    ps4.getPS4();  // Get (read) all PS4 button and joystick data values
-    Serial.println("Failed to connect to controller!");
-    delay(500); 
-  }
-
-  Serial.println("Connected!");
-
+  prizm.setDigitalInput(personSensorPin);
+  prizm.setDigitalInput(squareButtonPin);
+  prizm.setDigitalInput(circleButtonPin);
 }
 
 void loop() {
+  int joystickY = prizm.readAnalogInput(joystickYPin);
+  bool personDetected = prizm.readDigitalInput(personSensorPin) == 1;
+  bool squarePressed = prizm.readDigitalInput(squareButtonPin) == 0;
+  bool circlePressed = prizm.readDigitalInput(circleButtonPin) == 0;
 
-  ps4.getPS4();  // Get (read) all PS4 button and joystick data values
-
-// Servo controls: 
-  
-  // If the blue cross button is pressed, move the servo to it's maximum rotation
-  if(ps4.Button(CROSS)){
-    prizm.setServoPosition(1,180);    // Move servo 1 to 180 degrees
-  
-  // If the red circle is pressed, then move the servo back to it's start position
-  }else if(ps4.Button(CIRCLE)){
-    prizm.setServoPosition(1,0);      // Move servo 1 to 0 degrees
+  // Drive control
+  if (!personDetected) {
+    if (joystickY > forwardThreshold) {
+      prizm.setMotorPower(1, 50); // Left motor
+      prizm.setMotorPower(2, 50); // Right motor
+    } else if (joystickY < backwardThreshold) {
+      prizm.setMotorPower(1, -50);
+      prizm.setMotorPower(2, -50);
+    } else {
+      prizm.setMotorPower(1, 0);
+      prizm.setMotorPower(2, 0);
+    }
+  } else {
+    prizm.setMotorPower(1, 0);
+    prizm.setMotorPower(2, 0);
   }
 
-// If the green triangle button is pressed, move the servo to it's maximum rotation
-  if(ps4.Button(TRIANGLE)){
-    prizm.setServoPosition(2,180);    // Move servo 1 to 180 degrees
-  
-  // If the pink square is pressed, then move the servo back to it's start position
-  }else if(ps4.Button(SQUARE)){
-    prizm.setServoPosition(2,0);      // Move servo 1 to 0 degrees
+  // Box logic
+  if (squarePressed && !box) {
+    pickUpBox();
+    box = true;
+  } else if (squarePressed && box) {
+    placeBox();
+    box = false;
   }
-  
-// Motor Controls 
 
-  // If the left trigger is pressed, rotate motor 1 forward
-  if(ps4.Button(L2)){
-    prizm.setMotorSpeed(1, 100);      // Move motor 1 forward at 100 degrees per second (max is 720)
-  
-  // If the left bumper is pressed, rotate motor 1 backward
-  }else if(ps4.Button(L1)){
-    prizm.setMotorSpeed(1, -100);      // Move motor 1 backward at 100 degrees per second (minimum is -720)
-  
-  // If neither the left trigger or bumper is pressed, do not move motor 1
-  }else{
-    prizm.setMotorSpeed(1, 0);         // Stop motor 1 rotation
+  // Door logic
+  if (circlePressed && !door) {
+    pickUpDoor();
+    door = true;
+  } else if (circlePressed && door) {
+    placeDoor();
+    door = false;
   }
-  
-  // Control motor number 2 using the left joystick, press up to go forward and down to go back
- // prizm.setMotorPower(2, ps4.Motor(LY));
+
+  delay(150);
+}
+
+void pickUpBox() {
+  prizm.setServoPosition(1, 0);   // Down
+  delay(1000);
+  prizm.setServoPosition(1, 90);  // Up
+  delay(1000);
+}
+
+void placeBox() {
+  prizm.setServoPosition(1, 0);   // Gently lower
+  delay(1000);
+}
+
+void pickUpDoor() {
+  prizm.setServoPosition(1, 0);   // Down
+  delay(1500);
+  prizm.setServoPosition(1, 90);  // Lift
+  delay(1500);
+}
+
+void placeDoor() {
+  prizm.setServoPosition(1, 0);   // Lower onto shelf
+  delay(1500);
 }
