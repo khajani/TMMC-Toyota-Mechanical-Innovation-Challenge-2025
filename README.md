@@ -30,7 +30,7 @@ We are tasked with developing a mechanical system that can:
 
 ## 🔍 Project Preview 
 
-### 🖼️ CAD Render
-![CAD Render Placeholder](./CAD/render.jpg)
+### 🖼️ Crane Mechanism Inspiration 
+![CAD Render Placeholder](https://youtu.be/T3MieUvsxxU)
 
 
