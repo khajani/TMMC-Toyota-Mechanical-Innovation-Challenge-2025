@@ -37,3 +37,7 @@ We are tasked with developing a mechanical system that can:
 ### 🎬 Early Testing in Action
 
 
+
+https://github.com/user-attachments/assets/c546be00-7d07-44e0-af4c-db48d1a2eaca
+
+
