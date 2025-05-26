@@ -10,20 +10,27 @@ We are tasked with developing a mechanical system that can:
 - 🚗 Navigate forward, backward, and around corners.
 - 💸 Optimize for speed, cost, safety, and ease of use.
 
-## 🧱 System Requirements
-- Must not damage parts during transport.
+## 🧱 System Requirements & Constraints
+- Must not damage parts during transport/handling.
 - Must be able to operate safely in a warehouse environment.
-- Mechanisms must mount to a Tetrix base using 8 screws (maximum). 
+- Mechanisms must mount to a Tetrix base using 8 screws (maximum).
+- Must be built with the given materials and a maximum of two 3D printed parts (=< 27 cm^3)
 
 ## 🧰 Materials Used
-- 1 Tetrix Prizm Microcontroller
-- 1 Tetrix Max kit (Hardware kit)
-- 1 TeleOp Module
-- 2 Custom 3D Printed Components
+- 1 **Tetrix Prizm Microcontroller**
+- 1 **Tetrix Max kit** (Hardware kit)
+- 1 **TeleOp Module**
+- 2 **Custom 3D Printed Components** (Gripper)
+- 1 **Ultrasonic Sensor** (Human & Obstacle Detector) 
+- 1 **DC Motor with Encoder** (Arm Lifting Mechanism) 
+- 2 Servos (Arm Lifting Mechanism)
 - 1 Battery (12V)
 - 1 PS4 Controller
-- 1 Ultrasonic Sensor
 - 1 Pre-Made Four Wheel Tetrix Base
 
-![image](https://github.com/user-attachments/assets/fc334435-6793-4693-bf73-acf6cd0ce179)
+## 🔍 Project Preview 
+
+### 🖼️ CAD Render
+![CAD Render Placeholder](./CAD/render.jpg)
+
 
