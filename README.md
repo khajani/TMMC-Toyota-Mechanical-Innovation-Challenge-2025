@@ -48,6 +48,7 @@ Check out an early-stage demo of our AGV system during development and testing:
 ## 🛠 Components 
 
 ### Gripper
+![image](https://github.com/user-attachments/assets/f78ac7f2-cae5-4efd-8a4e-7ab6ec7f24ea)
 
 
 
