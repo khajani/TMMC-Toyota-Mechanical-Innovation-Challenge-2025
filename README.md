@@ -23,4 +23,7 @@ We are tasked with developing a mechanical system that can:
 - 1 Battery (12V)
 - 1 PS4 Controller
 - 1 Ultrasonic Sensor
-- 1 Pre-Made Four Wheel Tetrix Base 
+- 1 Pre-Made Four Wheel Tetrix Base
+
+![image](https://github.com/user-attachments/assets/fc334435-6793-4693-bf73-acf6cd0ce179)
+
