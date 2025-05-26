@@ -15,4 +15,12 @@ We are tasked with developing a mechanical system that can:
 - Must be able to operate safely in a warehouse environment.
 - Mechanisms must mount to a Tetrix base using 8 screws (maximum). 
 
-## 🧰 Materials
+## 🧰 Materials Used
+- 1 Tetrix Prizm Microcontroller
+- 1 Tetrix Max kit (Hardware kit)
+- 1 TeleOp Module
+- 2 Custom 3D Printed Components
+- 1 Battery (12V)
+- 1 PS4 Controller
+- 1 Ultrasonic Sensor
+- 1 Pre-Made Four Wheel Tetrix Base 
