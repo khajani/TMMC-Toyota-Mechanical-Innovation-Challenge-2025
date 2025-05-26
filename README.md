@@ -36,8 +36,9 @@ We are tasked with developing a mechanical system that can:
 
 ### 🎬 Early Testing in Action
 
+Check out an early-stage demo of our AGV system during development and testing:
 
+[🔗 Watch the video](https://github.com/user-attachments/assets/0cc993b4-1a04-4319-93ec-2eacf7249065)
 
-https://github.com/user-attachments/assets/c546be00-7d07-44e0-af4c-db48d1a2eaca
 
 
