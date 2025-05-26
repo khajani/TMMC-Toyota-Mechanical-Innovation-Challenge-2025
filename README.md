@@ -1,6 +1,9 @@
-# Toyota Mechanical Innovation Challenge – Vehicle Design
+# 🚗 Toyota Mechanical Innovation Challenge – AGV Design
 
 Welcome to my project repository for the **Toyota Mechanical Innovation Challenge**. This challenge, hosted by Toyota Motor Manufacturing Canada (TMMC), involved designing and presenting an automated guided vehicle (AGV) capable of safely transporting car doors and boxes within a simulated factory setting.
+
+## 📚 Table of Contents
+- [Challenge Overview](#challenge-overview)
 
 ## 📌 Challenge Overview
 We are tasked with developing a mechanical system that can:
@@ -39,6 +42,21 @@ We are tasked with developing a mechanical system that can:
 Check out an early-stage demo of our AGV system during development and testing:
 
 [🔗 Watch the video](https://github.com/user-attachments/assets/0cc993b4-1a04-4319-93ec-2eacf7249065)
+
+## ⚙️ How it Works 
+
+## 🛠 Components 
+
+### Gripper
+
+
+
+
+
+
+
+
+
 
 
 
