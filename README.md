@@ -30,7 +30,7 @@ We are tasked with developing a mechanical system that can:
 
 ## 🔍 Project Preview 
 
-### 🏗️ Demo Video
+### 🏗️ Crane Mechanism Inspiration Video
 
 [![Watch on YouTube](https://img.youtube.com/vi/T3MieUvsxxU/0.jpg)](https://youtu.be/T3MieUvsxxU)
 
