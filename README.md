@@ -45,13 +45,19 @@ Check out an early-stage demo of our AGV system during development and testing:
 [🔗 Watch the video](https://github.com/user-attachments/assets/0cc993b4-1a04-4319-93ec-2eacf7249065)
 
 ## ⚙️ How it Works 
+### Moving to Shelf
+Controlled by the PS4 controller, the AGV moves towards the shelf. 
+### Picking up Products
+
 
 ## 🛠 Components 
 
 ### Gripper
 ![image](https://github.com/user-attachments/assets/f78ac7f2-cae5-4efd-8a4e-7ab6ec7f24ea)
 
+## Challenges: 
 
+## Next Steps: 
 
 
 
