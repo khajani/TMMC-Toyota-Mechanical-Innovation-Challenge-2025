@@ -55,8 +55,8 @@ Controlled by the PS4 controller, the AGV moves towards the shelf.
 ### Gripper
 ![image](https://github.com/user-attachments/assets/f78ac7f2-cae5-4efd-8a4e-7ab6ec7f24ea)
 
-Top Left: The original Tetrix gripper   
-Bottom Left: The modified gripper with our 3D printed extensions
+Top Left: The modified gripper with our 3D printed extensions   
+Bottom Left: The original Tetrix gripper
 
 ## Challenges: 
 
