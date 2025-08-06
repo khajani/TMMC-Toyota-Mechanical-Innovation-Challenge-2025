@@ -45,21 +45,31 @@ Check out an early-stage demo of our AGV system during development and testing:
 [🔗 Watch the video](https://github.com/user-attachments/assets/0cc993b4-1a04-4319-93ec-2eacf7249065)
 
 ## ⚙️ How it Works 
-### Moving to Shelf
-Controlled by the PS4 controller, the AGV moves towards the shelf. 
+### Movement
+The AGV is controlled by the PS4 controller, with different buttons corresponding with different functions
 ### Picking up Products
-
+It switches between modes to handle car doors and boxes safely and efficiently using the gripper and lifting arm
 
 ## 🛠 Components 
 
 ### Gripper
+The gripper was redesigned in SolidWorks and enhanced with custom 3D printed extensions to improve grip and accommodate both doors and boxes.
+
+Mounted on the Tetrix base, it integrates seamlessly with the motor and servo arm mechanisms to allow precise, reliable handling.
+
 ![image](https://github.com/user-attachments/assets/f78ac7f2-cae5-4efd-8a4e-7ab6ec7f24ea)
 
 Top Left: The modified gripper with our 3D printed extensions   
 Bottom Left: The original Tetrix gripper
 
 ## Challenges: 
+- Designing a gripper flexible enough to securely handle parts of different shapes and sizes within material constraints.
 
+- Debugging the interaction between mechanical components and motor controls for smooth operation.
+
+- Balancing cost, safety, and performance under strict design limitations.
+
+- Managing limited 3D printed part volume while maintaining durability and functionality.
 ## Next Steps: 
 
 
