@@ -5,6 +5,12 @@ Welcome to my project repository for the **Toyota Mechanical Innovation Challeng
 ## 📚 Table of Contents
 - [Challenge Overview](#challenge-overview)
 - [System Requirements & Constraints](#system-requirements-&-constraints)
+- [Materials Used](#materials-used)
+- [Project Preview](#project-preview)
+- [How it Works](#how-it-works)
+- [Components](#components)
+- [Challenges & Lessons Learned](#challenges--lessons-learned)
+- [Next Steps](#next-steps)
 
 ## 📌 Challenge Overview
 We are tasked with developing a mechanical system that can:
