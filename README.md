@@ -63,15 +63,22 @@ Top Left: The modified gripper with our 3D printed extensions
 Bottom Left: The original Tetrix gripper
 
 ## Challenges: 
-- Designing a gripper flexible enough to securely handle parts of different shapes and sizes within material constraints.
+- Effectively managing project timelines and prioritizing tasks to meet deadlines despite unexpected technical challenges
 
-- Debugging the interaction between mechanical components and motor controls for smooth operation.
+- Designing a gripper flexible enough to securely handle parts of different shapes and sizes within material constraints
 
-- Balancing cost, safety, and performance under strict design limitations.
+- Debugging the interaction between mechanical components and motor controls for smooth operation
 
-- Managing limited 3D printed part volume while maintaining durability and functionality.
+- Balancing cost, safety, and performance under strict design limitations
+
+- Managing limited 3D printed part volume while maintaining durability and functionality
+  
 ## Next Steps: 
+- Improve autonomous navigation using sensor integration for obstacle avoidance
 
+- Optimize the gripper design for faster mode switching and enhanced grip
+
+- Implement more advanced control logic for adaptive handling based on part type
 
 
 
