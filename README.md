@@ -4,7 +4,7 @@ Welcome to my project repository for the **Toyota Mechanical Innovation Challeng
 
 ## 📚 Table of Contents
 - [Challenge Overview](#challenge-overview)
-- [System Requirements & Constraints](#system-requirements-&-constraints)
+- [System Requirements & Constraints](#system-requirements--constraints)
 - [Materials Used](#materials-used)
 - [Project Preview](#project-preview)
 - [How it Works](#how-it-works)
