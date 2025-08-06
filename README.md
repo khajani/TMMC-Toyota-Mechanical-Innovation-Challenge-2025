@@ -62,7 +62,7 @@ Mounted on the Tetrix base, it integrates seamlessly with the motor and servo ar
 Top Left: The modified gripper with our 3D printed extensions   
 Bottom Left: The original Tetrix gripper
 
-##⚠️ Challenges: 
+## ⚠️ Challenges: 
 - Effectively managing project timelines and prioritizing tasks to meet deadlines despite unexpected technical challenges
 
 - Designing a gripper flexible enough to securely handle parts of different shapes and sizes within material constraints
@@ -73,7 +73,7 @@ Bottom Left: The original Tetrix gripper
 
 - Managing limited 3D printed part volume while maintaining durability and functionality
   
-##🚀 Next Steps: 
+## 🚀 Next Steps: 
 - Improve autonomous navigation using sensor integration for obstacle avoidance
 
 - Optimize the gripper design for faster mode switching and enhanced grip
