@@ -1,4 +1,4 @@
-# 🚗 Toyota Mechanical Innovation Challenge – AGV Design
+# 🚗 Toyota Mechanical Innovation Challenge – AGV Design (KAIZENBERGER)
 
 Welcome to my project repository for the **Toyota Mechanical Innovation Challenge**. This challenge, hosted by Toyota Motor Manufacturing Canada (TMMC), involved designing and presenting an automated guided vehicle (AGV) capable of safely transporting car doors and boxes within a simulated factory setting.
 
