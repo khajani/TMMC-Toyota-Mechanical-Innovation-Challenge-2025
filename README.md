@@ -2,16 +2,6 @@
 
 KAIZENBERGER is an automated guided vehicle (AGV) design for the **Toyota Mechanical Innovation Challenge**. This challenge, hosted by Toyota Motor Manufacturing Canada (TMMC), involved designing and presenting an AGV capable of safely transporting car doors and boxes within a simulated factory setting.
 
-## 📚 Table of Contents
-- [Challenge Overview](#challenge-overview)
-- [System Requirements & Constraints](#system-requirements--constraints)
-- [Materials Used](#materials-used)
-- [Project Preview](#project-preview)
-- [How it Works](#how-it-works)
-- [Components](#components)
-- [Challenges & Lessons Learned](#challenges--lessons-learned)
-- [Next Steps](#next-steps)
-
 ## 📌 Challenge Overview
 We are tasked with developing a mechanical system that can:
 - 🛻 **Pick up and move car doors** from a 5-inch-tall shelf to a designated location.
