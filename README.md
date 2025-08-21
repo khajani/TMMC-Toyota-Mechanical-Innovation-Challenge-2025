@@ -34,6 +34,8 @@ We are tasked with developing a mechanical system that can:
 
 [![Watch on YouTube](https://img.youtube.com/vi/T3MieUvsxxU/0.jpg)](https://youtu.be/T3MieUvsxxU)
 
+<img width="718" height="406" alt="image" src="https://github.com/user-attachments/assets/7e17bcc5-e30a-4387-a861-99d5ff96f1f5" />
+
 ### 🎬 Early Testing in Action
 
 Check out an early-stage demo of our AGV system during development and testing:
